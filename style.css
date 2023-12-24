@@ -1,7 +1,11 @@
+/* Google font Import - Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* The :root selector matches the document's root element(html element).*/
@@ -36,15 +40,22 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    padding: 10px 14px;
     width: 250px;
     height: 100%;  /*Relative to the parent element. is used to make an element take up 100% of the height of its containing element or viewport. common in responsive web design to ensure that elements fill the available vertical space appropriately. */
     background-color: var(--panel-color);
 }
 
+/* Main Container */
+nav .logo-name{
+    display: flex;  
+    align-items: center;
+}
 /* Container of image  */
 nav .logo-image { 
+    display: flex;
     min-width: 45px;  /*If the width greater than or equal to the min-width property, the element will take on the specified width and not min-width.*/ 
-    background-color: orange;
+    justify-content: center;
 }   
 /* Image */
 nav .logo-image img {
@@ -52,3 +63,13 @@ nav .logo-image img {
     object-fit: cover;  /* used to control <img> or <video>,*/
     border-radius: 50%;
 }
+/* logo name */
+nav .logo-name .logo_name{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+}
+
+
+
