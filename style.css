@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The :root selector matches the document's root element(html element).*/
+/* It is often used to define 'global CSS variables' that can be accessed and reused throughout the stylesheet */
+:root {
+    /* global CSS variables */
+    /* css variables which are used inside var(--primary-color)*/
+    --primary-color: #0E4BF1;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #E7D1FC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+
+    /* Transition */
+    /* transition: transition-property transition-duration transition-timing-function*/
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+body{
+    min-height: 100vh; /*the CSS rule ensures that the minimum height of the <body> element is set to be at least the full height of the viewport. This is commonly used in responsive web design to ensure that the body takes up at least the entire height of the screen, even if the content inside the body is not enough to fill the entire viewport. It helps in scenarios where you want to ensure that the background color or background image covers the entire visible area of the screen, creating a consistent look regardless of the content's length.*/
+    background-color: var(--primary-color);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;  /*Relative to the parent element. is used to make an element take up 100% of the height of its containing element or viewport. common in responsive web design to ensure that elements fill the available vertical space appropriately. */
+    background-color: var(--panel-color);
+}
+
+/* Container of image  */
+nav .logo-image { 
+    min-width: 45px;  /*If the width greater than or equal to the min-width property, the element will take on the specified width and not min-width.*/ 
+    background-color: orange;
+}   
+/* Image */
+nav .logo-image img {
+    width: 40px;
+    object-fit: cover;  /* used to control <img> or <video>,*/
+    border-radius: 50%;
+}

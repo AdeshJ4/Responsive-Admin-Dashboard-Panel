@@ -1,0 +1,29 @@
+Tip: The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+
+
+
+what is meaning of this :
+body{
+    min-height: 100vh;
+}
+-> the CSS rule ensures that the 'minimum height' of the <body> element is set to be at least the full height of the viewport. 
+This is commonly used in responsive web design to ensure that the body takes up at least the entire height of the screen, even if 
+the content inside the body is not enough to fill the entire viewport. It helps in scenarios where you want to ensure that the 
+background color or background image covers the entire visible area of the screen, creating a consistent look regardless of the 
+content's length.
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+
+div{
+    height: 100%;
+}
+
+-> Relative to the parent element
+-> is used to make an element take up 100% of the height of its containing element or viewport. common in responsive web design to 
+ensure that elements fill the available vertical space appropriately.
+
+
+
+

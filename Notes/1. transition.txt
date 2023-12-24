@@ -1,0 +1,41 @@
+In this chapter you will learn about the following properties:
+
+transition : short hand for all properties
+transition-delay : 1s
+transition-duration : 2s, 0.2s
+transition-property : height , width, all
+transition-timing-function : ease, linear, ease-in, ease-out, ease-in-out
+
+
+HTML: <div></div>
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width heigh transform;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+ex. 2
+div {
+  transition: width 2s, height 2s, transform 2s;
+}
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg)
+}
+
+
+ex.3
+div {
+  transition: width 2s linear;
+}
+

@@ -1,0 +1,42 @@
+why we use :root ?
+
+
+
+`:root` and the universal selector (`*`) serve different purposes in CSS.
+
+1. **`:root`**:
+    - `:root` is a pseudo-class selector that represents the highest-level parent element in the document hierarchy, typically the 
+    `html` element.
+    - It is often used to define global CSS variables (custom properties) that can be accessed and reused throughout the stylesheet.
+    - Example:
+        :root {
+          --main-bg-color: #f0f0f0;
+          --text-color: #333;
+        }
+        body {
+          background-color: var(--main-bg-color);
+          color: var(--text-color);
+        }
+    - In this example, `:root` is used to define global variables (`--main-bg-color` and `--text-color`) that are then used in 
+    styling the `body` element.
+
+
+
+
+2. **Universal Selector (`*`)**:
+
+    - The universal selector (`*`) selects all elements on the page, regardless of type.
+    - It is often used to apply styles globally or to reset default styles for all elements.
+    - Example:
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+    - This example uses the universal selector to set a consistent box model for all elements by resetting margins, padding, and 
+    using `box-sizing: border-box`.
+
+In summary, `:root` is used to define global CSS variables, typically at the root level of the document, while the universal selector 
+(`*`) is used to select and apply styles to all elements on the page. They serve different purposes but can be used in conjunction 
+to create consistent and maintainable styles.

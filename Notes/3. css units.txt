@@ -1,0 +1,38 @@
+CSS Units
+
+
+There are two types of length units: absolute and relative.
+
+
+
+1. Absolute Lengths:
+
+-> The absolute length units are 'fixed' and a length expressed in any of these will appear as exactly that size.
+-> Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if 
+the output medium is known, such as for print layout.
+
+Unit	Description
+cm	    centimeters
+mm	    millimeters
+in	    inches (1in = 96px = 2.54cm)
+px  	pixels (1px = 1/96th of 1in)
+pt	    points (1pt = 1/72 of 1in)
+pc	    picas (1pc = 12 pt)
+
+
+
+
+2. Relative Lengths:
+
+The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+Unit	Description	
+em	    Relative to the font-size of the element (2em means 2 times the size of the current font)	
+rem	    Relative to font-size of the root element	
+vh	    Relative to 1% of the height of the browser window size*	
+vw	    Relative to 1% of the width of the browser window size*	
+%	    Relative to the parent element
+
+
+
